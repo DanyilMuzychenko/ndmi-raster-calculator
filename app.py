@@ -155,18 +155,19 @@ st.markdown("""
 # ----------------------------
 # Analiza NDMI w obrębie obszaru wektorowego
 # ----------------------------
-ndmi_masked = np.where(mask_area == 1, ndmi, np.nan)
+if area_file:
+    ndmi_masked = np.where(mask_area == 1, ndmi, np.nan)
 
-mean_ndmi = np.nanmean(ndmi_masked)
-min_ndmi = np.nanmin(ndmi_masked)
-max_ndmi = np.nanmax(ndmi_masked)
-pixel_count = np.sum(mask_area == 1)
+    mean_ndmi = np.nanmean(ndmi_masked)
+    min_ndmi = np.nanmin(ndmi_masked)
+    max_ndmi = np.nanmax(ndmi_masked)
+    pixel_count = np.sum(mask_area == 1)
 
-st.subheader("Statystyki NDMI dla wybranego obszaru")
+    st.subheader("Statystyki NDMI dla wybranego obszaru")
 
-st.markdown(f"""
-- **Średnia wartość NDMI:** `{mean_ndmi:.3f}`
-- **Minimalna wartość NDMI:** `{min_ndmi:.3f}`
-- **Maksymalna wartość NDMI:** `{max_ndmi:.3f}`
-- **Liczba pikseli w obszarze:** `{pixel_count}`
-""")
+    st.markdown(f"""
+    - **Średnia wartość NDMI:** `{mean_ndmi:.3f}`
+    - **Minimalna wartość NDMI:** `{min_ndmi:.3f}`
+    - **Maksymalna wartość NDMI:** `{max_ndmi:.3f}`
+    - **Liczba pikseli w obszarze:** `{pixel_count}`
+    """)

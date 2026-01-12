@@ -13,6 +13,10 @@ Aplikacja obsługuje jednocześnie:
 oraz wykonuje analizę przestrzenną łącząc oba typy danych.
 
 ---
+## Interfejs aplikacji 
+
+![Widok główny](data/hud_main.png)
+![Statystyki NDMI](data/hud_stats.png)
 
 ## Wzór matematyczny
 
