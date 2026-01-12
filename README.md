@@ -15,8 +15,10 @@ oraz wykonuje analizę przestrzenną łącząc oba typy danych.
 ---
 ## Interfejs aplikacji 
 
-![Widok główny](data/hud_main.png)
-![Statystyki NDMI](data/hud_stats.png)
+![Widok główny](images/hud_main.png)
+
+## Interfejs aplikacji (Z mapą) 
+![Statystyki NDMI](images/hud_stats.png)
 
 ## Wzór matematyczny
 
