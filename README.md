@@ -96,9 +96,10 @@ jednocześnie.
 
 Aby uruchomić aplikację lokalnie, upewnij się, że masz zainstalowanego Pythona, a następnie wykonaj poniższe kroki:
 
-1. Zainstaluj wymagane biblioteki:
+1. Zainstaluj wymagane biblioteki i uruchom:
    ```bash
    pip install -r requirements.txt
+   streamlit run (i path projektu albo app.py)
    
 ## Instrukcja uruchomienia (z Dockerem)
 
